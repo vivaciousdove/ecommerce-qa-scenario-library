@@ -29,3 +29,8 @@ playwright-report/
 # Build output
 dist/
 build/
+
+# Playwright
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

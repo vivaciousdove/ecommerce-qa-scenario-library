@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-qa-scenario-library",
+  "version": "1.0.0",
+  "description": "A validated, interactive QA learning and portfolio application that translates cloud architecture concepts into practical **e-commerce quality engineering scenarios, multi-cloud service mappings, business risks, and test strategies**.",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivaciousdove/ecommerce-qa-scenario-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vivaciousdove/ecommerce-qa-scenario-library/issues"
+  },
+  "homepage": "https://github.com/vivaciousdove/ecommerce-qa-scenario-library#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
