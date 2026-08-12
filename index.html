@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>E-commerce QA Scenario Library</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+    <header class="page-header">
+
+      <p class="eyebrow">
+        QA Architecture Learning Tool
+      </p>
+
+      <h1>
+        E-commerce QA Scenario Library
+      </h1>
+
+      <p class="subtitle">
+        Select an architecture capability to explore its cloud mappings,
+        systems analogies, QA test scenario, and business risk.
+      </p>
+
+    </header>
+
+
+    <!-- =========================
+         CAPABILITY SELECTION
+    ========================== -->
+    <section class="panel">
+
+      <h2>
+        1. Select Capability
+      </h2>
+
+      <div class="selector-row">
+
+        <label for="capabilitySelect">
+          Architecture Capability
+        </label>
+
+        <select id="capabilitySelect">
+
+          <option value="">
+            Select a capability
+          </option>
+
+          <option value="autoScaling">
+            Auto Scaling
+          </option>
+
+          <option value="cache">
+            Cache
+          </option>
+
+          <option value="cdn">
+            CDN
+          </option>
+
+          <option value="dns">
+            DNS
+          </option>
+
+          <option value="loadBalancing">
+            Load Balancing
+          </option>
+
+          <option value="messageQueue">
+            Message Queue
+          </option>
+
+          <option value="monitoring">
+            Monitoring
+          </option>
+
+          <option value="notifications">
+            Event Notifications / Pub-Sub
+          </option>
+
+          <option value="objectStorage">
+            Object Storage
+          </option>
+
+          <option value="relationalDatabase">
+            Relational Database
+          </option>
+
+          <option value="webFirewall">
+            Web Firewall
+          </option>
+
+        </select>
+
+      </div>
+
+      <div class="actions">
+
+        <button
+          id="resetButton"
+          type="button"
+          class="secondary">
+          Reset
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INITIAL STATE
+    ========================== -->
+    <section
+      id="initialState"
+      class="panel initial-state">
+
+      <h2>
+        Scenario Ready
+      </h2>
+
+      <p>
+        Select a capability above to display its AWS, Azure, and Google Cloud
+        mappings, football and wireless analogies, e-commerce QA example,
+        test scenario, business impact, and risk.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         SCENARIO CONTENT
+    ========================== -->
+    <section
+      id="scenarioSection"
+      class="scenario-section"
+      hidden>
+
+
+      <!-- =========================
+           CAPABILITY
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          2. Capability
+        </h2>
+
+        <p
+          id="capabilityName"
+          class="capability-name">
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           CLOUD MAPPINGS
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          3. Cloud Mappings
+        </h2>
+
+        <div class="cloud-grid">
+
+          <article class="info-card">
+
+            <h3>
+              AWS
+            </h3>
+
+            <p id="awsValue"></p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>
+              Azure
+            </h3>
+
+            <p id="azureValue"></p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>
+              Google Cloud
+            </h3>
+
+            <p id="gcpValue"></p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           FOOTBALL ANALOGY
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          4. Football Analogy
+        </h2>
+
+        <p id="footballValue"></p>
+
+      </section>
+
+
+      <!-- =========================
+           WIRELESS ANALOGY
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          5. Wireless Analogy
+        </h2>
+
+        <p id="wirelessValue"></p>
+
+      </section>
+
+
+      <!-- =========================
+           E-COMMERCE QA
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          6. E-commerce QA
+        </h2>
+
+        <p id="ecommerceQAValue"></p>
+
+      </section>
+
+
+      <!-- =========================
+           TEST SCENARIO
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          7. QA Test Scenario
+        </h2>
+
+        <ol id="testScenarioList"></ol>
+
+      </section>
+
+
+      <!-- =========================
+           WHY IT MATTERS
+      ========================== -->
+      <section class="panel">
+
+        <h2>
+          8. Why It Matters
+        </h2>
+
+        <p id="whyItMattersValue"></p>
+
+      </section>
+
+
+      <!-- =========================
+           BUSINESS RISK
+      ========================== -->
+      <section class="panel business-risk-panel">
+
+        <h2>
+          9. Business Risk
+        </h2>
+
+        <p
+          id="businessRiskValue"
+          class="business-risk">
+        </p>
+
+      </section>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+/* =========================================================
+   E-COMMERCE QA SCENARIO LIBRARY
+   V1.0 MVP
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f4f7fb;
+  color: #172033;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   2. MAIN APPLICATION CONTAINER
+   ========================================================= */
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 40px 0 60px;
+}
+
+
+/* =========================================================
+   3. PAGE HEADER
+   ========================================================= */
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #48627d;
+}
+
+.page-header h1 {
+  margin: 0;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+
+  color: #142033;
+}
+
+.subtitle {
+  max-width: 780px;
+
+  margin: 14px 0 0;
+
+  font-size: 1rem;
+
+  color: #536174;
+}
+
+
+/* =========================================================
+   4. GENERAL PANEL
+   ========================================================= */
+
+.panel {
+  margin-bottom: 20px;
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #d9e1eb;
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 8px rgba(25, 42, 70, 0.05);
+}
+
+.panel h2 {
+  margin: 0 0 18px;
+
+  font-size: 1.15rem;
+  line-height: 1.3;
+
+  color: #172033;
+}
+
+.panel p {
+  margin-top: 0;
+}
+
+.panel p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   5. CAPABILITY SELECTOR
+   ========================================================= */
+
+.selector-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(180px, 240px)
+    minmax(240px, 1fr);
+
+  gap: 18px;
+
+  align-items: center;
+}
+
+.selector-row label {
+  font-weight: 700;
+  color: #26354a;
+}
+
+.selector-row select {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  font: inherit;
+
+  color: #172033;
+  background: #ffffff;
+
+  border: 1px solid #b9c5d4;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.selector-row select:hover {
+  border-color: #74869b;
+}
+
+.selector-row select:focus {
+  outline: 3px solid rgba(32, 88, 138, 0.16);
+  border-color: #20588a;
+}
+
+
+/* =========================================================
+   6. ACTION BUTTONS
+   ========================================================= */
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 18px;
+}
+
+button {
+  min-width: 110px;
+
+  padding: 10px 18px;
+
+  font: inherit;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+button.secondary {
+  color: #233247;
+  background: #eef2f7;
+
+  border: 1px solid #cbd5e1;
+}
+
+button.secondary:hover {
+  background: #e2e8f0;
+}
+
+button.secondary:focus {
+  outline: 3px solid rgba(32, 88, 138, 0.16);
+  border-color: #20588a;
+}
+
+
+/* =========================================================
+   7. INITIAL STATE
+   ========================================================= */
+
+.initial-state {
+  text-align: center;
+
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.initial-state h2 {
+  margin-bottom: 10px;
+}
+
+.initial-state p {
+  max-width: 720px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #59687a;
+}
+
+
+/* =========================================================
+   8. SCENARIO SECTION
+   ========================================================= */
+
+.scenario-section {
+  display: block;
+}
+
+.scenario-section[hidden] {
+  display: none;
+}
+
+
+/* =========================================================
+   9. CAPABILITY NAME
+   ========================================================= */
+
+.capability-name {
+  margin: 0;
+
+  font-size: 1.65rem;
+  font-weight: 700;
+
+  color: #1c4f7a;
+}
+
+
+/* =========================================================
+   10. CLOUD MAPPING GRID
+   ========================================================= */
+
+.cloud-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.info-card {
+  min-height: 130px;
+
+  padding: 18px;
+
+  background: #f8fafc;
+
+  border: 1px solid #dce4ed;
+  border-radius: 10px;
+}
+
+.info-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #536174;
+}
+
+.info-card p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  color: #1c3048;
+}
+
+
+/* =========================================================
+   11. QA TEST SCENARIO
+   ========================================================= */
+
+#testScenarioList {
+  margin: 0;
+  padding-left: 24px;
+}
+
+#testScenarioList li {
+  margin-bottom: 10px;
+  padding-left: 6px;
+}
+
+#testScenarioList li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   12. BUSINESS RISK
+   ========================================================= */
+
+.business-risk-panel {
+  border-left: 5px solid #9a5b20;
+}
+
+.business-risk {
+  font-weight: 700;
+  color: #6f3e13;
+}
+
+
+/* =========================================================
+   13. CONTENT READABILITY
+   ========================================================= */
+
+#footballValue,
+#wirelessValue,
+#ecommerceQAValue,
+#whyItMattersValue,
+#businessRiskValue {
+  max-width: 900px;
+}
+
+
+/* =========================================================
+   14. RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(94%, 720px);
+    padding-top: 24px;
+  }
+
+  .selector-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cloud-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    justify-content: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   15. SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .panel {
+    padding: 18px;
+    border-radius: 9px;
+  }
+
+  .page-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .capability-name {
+    font-size: 1.35rem;
+  }
+
+}
+
+
+/* =========================================================
+   16. ACCESSIBILITY / REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+}
+
+
+/* =========================================================
+   17. PRINT SUPPORT
+   ========================================================= */
+
+@media print {
+
+  body {
+    background: #ffffff;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .panel {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .actions {
+    display: none;
+  }
+
+}

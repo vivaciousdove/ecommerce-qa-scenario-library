@@ -1,0 +1,31 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Code local settings
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Node dependencies
+node_modules/
+
+# Test output / coverage
+coverage/
+test-results/
+playwright-report/
+
+# Build output
+dist/
+build/
