@@ -8,6 +8,8 @@ A validated, interactive QA learning and portfolio application that translates c
 **Regression:** 8/8 PASS  
 **Release-Blocking Defects:** 0
 
+**Live Demo:** https://vivaciousdove.github.io/ecommerce-qa-scenario-library/
+
 ---
 
 ## Overview
